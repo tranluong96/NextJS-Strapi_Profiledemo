@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "positions",
+  "info": {
+    "singularName": "position",
+    "pluralName": "positions",
+    "displayName": "Position",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Active": {
+      "type": "boolean",
+      "default": true
+    },
+    "recruitments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recruitment.recruitment",
+      "mappedBy": "position"
+    }
+  }
+}

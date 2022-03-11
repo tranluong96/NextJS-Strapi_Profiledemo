@@ -1,0 +1,17 @@
+{
+  "name": "myprofile-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd profile_backend && yarn run develop",
+    "client": "cd profile_frontend && yarn run dev",
+    "start": "concurrently \"yarn run server\" \"yarn run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

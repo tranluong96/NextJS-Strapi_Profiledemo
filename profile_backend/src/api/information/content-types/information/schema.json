@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "informations",
+  "info": {
+    "singularName": "information",
+    "pluralName": "informations",
+    "displayName": "Information",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Last_Name": {
+      "type": "string"
+    },
+    "First_Name": {
+      "type": "string"
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    "Birthday": {
+      "type": "date"
+    },
+    "Avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Phone_01": {
+      "type": "integer"
+    },
+    "Phone_02": {
+      "type": "integer"
+    },
+    "Email_01": {
+      "type": "email"
+    },
+    "Email_02": {
+      "type": "email"
+    },
+    "Address_01": {
+      "type": "text"
+    },
+    "Address_02": {
+      "type": "text"
+    },
+    "Latitude": {
+      "type": "string"
+    },
+    "Longitude": {
+      "type": "string"
+    },
+    "Notes_memo": {
+      "type": "richtext"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}
